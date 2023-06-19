@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    position: fixed; /* Add fixed positioning */
+    top: 0; /* Position the navbar at the top */
+    left: 0;
+    width: 100vw;
+    background-color: black;
+    color: #fff;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 20% 40% 35%;
+    z-index: 999; /* Add a high z-index to ensure the navbar appears above other elements */
+  }
+.left{
+    display: flex;
+    justify-content: center;
+    
+    margin: 10px;
+    padding: 5px;
+}
+
+.center{
+    background-color: white;
+    border-radius: 5px;
+
+    color :black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+}
+.center input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+}
+
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    
+}
+
+.right .loginDiv{
+    background-color: yellow;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color :black;
+}
+
+.right .cartDiv {
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.right .moreDiv {
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.navitem{
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.navitem:hover{
+    transform: scale(1.2);
+    box-shadow: 0 1px 4px rgba(255, 255, 0, 2.5);
+}
