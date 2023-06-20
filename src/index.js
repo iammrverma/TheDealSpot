@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './components.js/navbar/Navbar';
 import CategoryComponent from './components.js/CategoryComponent/CategoryComponent';
 import Carousel from './components.js/carousel/Carousel';
+import Selection from './components.js/selection/Selection';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,8 +18,8 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <CategoryComponent />
-    
-      <Carousel slides={slides} width={"100vw"} height={"28rem"} />
+    <Carousel slides={slides} width={"100vw"} height={"28rem"} />
+    <Selection/>
     
   </React.StrictMode>
 );
