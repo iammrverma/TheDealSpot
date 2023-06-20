@@ -18,7 +18,8 @@
   }
   .category-items {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    padding: 0 20px;
 
   }
   .category-item {
@@ -51,8 +52,8 @@
     background-color: #f0f0f0;
   }
   .category-item img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 125px;
     object-fit: fill;
     margin: 0 20px;
   }
@@ -68,6 +69,5 @@
     height: 100px;
 
   }
-  
-  /* Additional styling as needed */
+
   
