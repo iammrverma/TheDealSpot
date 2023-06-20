@@ -4,22 +4,31 @@
     box-sizing: border-box;
 }
 .navbar {
-    position: fixed; /* Add fixed positioning */
-    top: 0; /* Position the navbar at the top */
+    position: fixed; 
+    top: 0; 
     left: 0;
+    height: 70px;
     width: 100vw;
     background-color: black;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 20% 40% 35%; */
+    z-index: 999; 
+  }
+  .inner{
+    width: 70rem;
     display: grid;
     justify-content: space-around;
     align-items: center;
     grid-template-columns: 20% 40% 35%;
-    z-index: 999; /* Add a high z-index to ensure the navbar appears above other elements */
+    border: 1px solid pink;
   }
 .left{
     display: flex;
     justify-content: center;
-    
+    border: 1px solid red;
     margin: 10px;
     padding: 5px;
 }
@@ -27,18 +36,19 @@
 .center{
     background-color: white;
     border-radius: 5px;
-
     color :black;
     display: flex;
     justify-content: space-between;
     margin: 10px;
     padding: 5px;
+    border: 1px solid red;
 }
 .center input{
     width: 100%;
     outline: none;
-    border: none;
+    /* border: none; */
     padding: 0 10px;
+    
 }
 
 
@@ -46,7 +56,7 @@
     display: flex;
     justify-content: space-around;
     margin: 10px;
-    
+    border: 1px solid red;
 }
 
 .right .loginDiv{
@@ -54,6 +64,7 @@
     padding: 5px 20px;
     border-radius: 10px;
     color :black;
+    border: 1px solid green;
 }
 
 .right .cartDiv {
@@ -61,18 +72,21 @@
     padding: 5px 20px;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid green;
 }
 .right .moreDiv {
     display: flex;
     padding: 5px 20px;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid green;
 }
 .navitem{
     transition: transform 0.5s ease-in-out;
     border-radius: 10px;
 }
 .navitem:hover{
-    transform: scale(1.2);
-    box-shadow: 0 1px 4px rgba(255, 255, 0, 2.5);
+    transform: scale(1.05);
+    /* box-shadow: 0 1px 4px rgba(255, 255, 0, 2.5); */
+    cursor: pointer;
 }
