@@ -53,7 +53,7 @@
   transform: scale(1.2);
   border: none;
 }
-img{
+.slider img{
   width: 250px;
   height: 250px;
 }
