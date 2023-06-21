@@ -6,6 +6,7 @@ import CategoryComponent from './components.js/CategoryComponent/CategoryCompone
 import Carousel from './components.js/carousel/Carousel';
 import Selection from './components.js/selection/Selection';
 import Asus from './components.js/asus/Asus';
+import CategoryImage from './components.js/CategoryImag/CategoryImage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
     <Carousel slides={slides} width={"100vw"} height={"28rem"} index={2}/>
     <Asus src={process.env.PUBLIC_URL+"assets/asus series/img2.png"}/>
     <Carousel slides={slides} width={"100vw"} height={"28rem"} index={3}/>
+    <CategoryImage/>
     
   </React.StrictMode>
 );
