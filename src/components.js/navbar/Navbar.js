@@ -32,8 +32,7 @@ export default function Navbar() {
     <div className='navbar'>
       <div className="inner">
         <div className="left navitem" onClick={handleBrandDivClick}>
-          <img src="" alt="" className='navitem' />
-          Logo
+          <img src={process.env.PUBLIC_URL+"assets/logo.png"} alt="" className='navitem logo' />
         </div>
         <div className="center navitem">
           <FaSearch />
