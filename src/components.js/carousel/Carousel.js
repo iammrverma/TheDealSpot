@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import './Carousel.css';
 
-const Carousel = ({ slides, width, height }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const Carousel = ({ slides, width, height, index}) => {
+  const [currentIndex, setCurrentIndex] = useState(index);
   const slideStyles = {
     backgroundImage: `url(${slides[currentIndex].url})`
   };

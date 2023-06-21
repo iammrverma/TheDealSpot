@@ -5,6 +5,7 @@ import Navbar from './components.js/navbar/Navbar';
 import CategoryComponent from './components.js/CategoryComponent/CategoryComponent';
 import Carousel from './components.js/carousel/Carousel';
 import Selection from './components.js/selection/Selection';
+import Asus from './components.js/asus/Asus';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,8 +19,11 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <CategoryComponent />
-    <Carousel slides={slides} width={"100vw"} height={"28rem"} />
+    <Carousel slides={slides} width={"100vw"} height={"28rem"} index={0}/>
     <Selection/>
+    <Carousel slides={slides} width={"100vw"} height={"28rem"} index={2}/>
+    <Asus src={process.env.PUBLIC_URL+"assets/asus series/img2.png"}/>
+    <Carousel slides={slides} width={"100vw"} height={"28rem"} index={3}/>
     
   </React.StrictMode>
 );
