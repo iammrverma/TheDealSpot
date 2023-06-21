@@ -63,6 +63,11 @@
 .about .price{
   color: yellow;
 }
+.about p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 @keyframes slide {
   from{
     transform: translateX(0);
@@ -73,7 +78,7 @@
 }
 
 .button-53 {
-  background-color: #3DD1E7;
+  background-color: yellow;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;

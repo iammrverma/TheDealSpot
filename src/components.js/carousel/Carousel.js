@@ -20,9 +20,19 @@ const Carousel = ({ slides, width, height }) => {
     setCurrentIndex(newIndex);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleRightClick();
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentIndex]);
+
   return (
-    <div className="Carousel" style={{width:width, height:height}}>
-      <div className='container'>
+    <div className="Carousel" style={{ width: width, height: height }}>
+      <div className="container">
         <div className="leftArrow" onClick={handleLeftClick}><FaAngleLeft /></div>
         <div className="slides" style={slideStyles}></div>
         <div className="rightArrow" onClick={handleRightClick}><FaAngleRight /></div>

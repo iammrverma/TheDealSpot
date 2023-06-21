@@ -31,7 +31,7 @@ const Selection = () => {
                 <div className="static">
                     Electonics
                     <button className='button-53'>View All</button>
-                    <img src={process.env.PUBLIC_URL + `assets/electronics/image5.png`} alt="" />
+                    <img src={process.env.PUBLIC_URL + `assets/electronics/image5edited.png`} alt="" />
                 </div>
                 <div className='selectionRight'>
                 <div className="slider">
