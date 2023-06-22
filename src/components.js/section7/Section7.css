@@ -1,0 +1,54 @@
+.Section7 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 20px 0; 
+  }
+  .Section7inner{
+    position: relative;
+    width: 90%;
+  }
+  .Section7 .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .Section7 .background img{
+    width: 100%;
+  }
+  .items{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+  }
+  .Section7 .box {
+    position: relative; 
+    width: 400px; 
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .Section7 .box .bgimage {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .Section7 .box .product {
+    position: relative; /* Add relative positioning */
+    z-index: 2; /* Set a higher z-index to appear on top of the background image */
+  }
+  
+  .Section7 .box .product .itemimage {
+    width: 100%; /* Ensure the image occupies the entire container */
+    height: auto; /* Adjust the height as needed */
+  }
+  

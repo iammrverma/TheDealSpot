@@ -7,6 +7,7 @@ import Carousel from './components.js/carousel/Carousel';
 import Selection from './components.js/selection/Selection';
 import Asus from './components.js/asus/Asus';
 import CategoryImage from './components.js/CategoryImag/CategoryImage';
+import Section7 from './components.js/section7/Section7';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
     <Asus src={process.env.PUBLIC_URL+"assets/asus series/img2.png"}/>
     <Carousel slides={slides} width={"100vw"} height={"28rem"} index={3}/>
     <CategoryImage/>
+    <Section7/>
     
   </React.StrictMode>
 );
