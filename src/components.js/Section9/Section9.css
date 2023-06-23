@@ -1,0 +1,37 @@
+.Section9{
+    width: 100vw;
+    padding: 10px;
+    margin: 10px 0;
+    position:relative;
+    border: 1px solid red;
+
+}
+.Section9 img{
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.Section9 .shoes {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.Section9 .shoes .shoe{
+    cursor: pointer;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+
+.Section9 .shoes .shoe img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
