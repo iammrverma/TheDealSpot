@@ -1,0 +1,80 @@
+.Section8 {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.Section8 span {
+  color: yellow;
+}
+
+.Section8 .Section8Slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.Section8 .SliderContainer {
+  display: flex;
+  width: fit-content;
+}
+
+.Section8 .Section8Slide {
+  flex: 0 0 300px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 3rem;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.Section8 .Section8Slide img {
+  width: 100%;
+  height: auto;
+}
+
+.Section8 .Section8Slide p {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Section8 .Section8Slide button {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #000;
+  font-weight: bolder;
+  color: #fff;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+}
+
+.Section8 .Section8Slide button:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.Section8 .SliderButtonLeft,
+.Section8 .SliderButtonRight {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  z-index: 1;
+  padding: 5px;
+  background-color: yellow;
+  color: #fff;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.Section8 .SliderButtonLeft {
+  left: 10px;
+}
+
+.Section8 .SliderButtonRight {
+  right: 10px;
+}
