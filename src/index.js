@@ -10,6 +10,7 @@ import CategoryImage from './components.js/CategoryImag/CategoryImage';
 import Section7 from './components.js/section7/Section7';
 import Section8 from './components.js/Section8/Section8';
 import Section9 from './components.js/Section9/Section9';
+import Footer from './components.js/footer/footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,7 +32,8 @@ root.render(
     <CategoryImage/>
     <Section7/>
     <Section8/>
-    <Section9/>
+    {/* <Section9/> */}
+    <Footer/>
   </React.StrictMode>
 );
 
